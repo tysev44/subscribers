@@ -30,7 +30,9 @@ function Subscribe() {
 
   return (
     <div>
-        <input value={name} onChange={(e)=>setname(e.target.value)} placeholder='Enter Yout Name' />
+        <div>
+            <input value={name} onChange={(e)=>setname(e.target.value)} placeholder='Enter Yout Name' />
+        </div>
         <input value={email} onChange={(e)=>setemail(e.target.value.trim())} placeholder='Enter Yout Email' />
         {
             stats === 'true' ?
