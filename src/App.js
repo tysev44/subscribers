@@ -12,7 +12,7 @@ function App() {
   useEffect(()=>{
     const func=async()=>{
       try {
-        await axios.post('http://localhost:4000/preloader').then((res)=>{
+        await axios.post('https://subscribersserver.onrender.com/preloader').then((res)=>{
           if(res?.data.status === 'success'){
             setstats(false)
           }

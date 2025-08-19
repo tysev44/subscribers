@@ -11,7 +11,7 @@ function Survey() {
     const handleSurvey =async()=>{
         setstats('true')
         try {
-            await axios.post('http://localhost:4000/surveys',{fstansw, secansw}).then((res)=>{
+            await axios.post('https://subscribersserver.onrender.com/surveys',{fstansw, secansw}).then((res)=>{
                 if(res.data.status === 'success'){
                     setstats('false')
                     setfstansw('')

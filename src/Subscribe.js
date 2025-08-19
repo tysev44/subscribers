@@ -12,7 +12,7 @@ function Subscribe() {
     const handleSubscribe =async()=>{
         setstats('true')
         try {
-            await axios.post('http://localhost:4000/subscribe', {email, name}).then((res)=>{                
+            await axios.post('https://subscribersserver.onrender.com/subscribe', {email, name}).then((res)=>{                
                 if(res.data.status === 'success'){
                     setstats('false')
                     setemail('')
