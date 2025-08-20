@@ -38,9 +38,6 @@ function Survey() {
             stats === 'true' ?
                 <button>Submiting</button>
             :
-            stats === 'false' ?
-                <button>Submited</button>
-            :
             <button onClick={handleSurvey} >Submit</button>
         }
     </div>
