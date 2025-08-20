@@ -38,9 +38,6 @@ function Subscribe() {
             stats === 'true' ?
                 <button>Subscribing</button>
             :
-            stats === 'false' ?
-                <button>Subscribed</button>
-            :
             <button onClick={handleSubscribe} >Subscribe</button>
         }
 
